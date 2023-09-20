@@ -4,3 +4,21 @@
     <li [ngClass]="{'vital': isThisIngredientVital}">Cornichons</li>
     <li>Charcuterie</li>
 </ul>
+<hr>
+<ul *appDisplayGuests="displayGuestsList">
+    <li>Pompée</li>
+    <li>César</li>
+    <li>Marc Antoine</li>
+    <li>Astia</li>
+    <li>Cléopatre</li>
+    <li>Octavia</li>
+    <li>Octave</li>
+</ul>
+<hr>
+<ul>
+    <li *ngFor="let lp of lpList">
+        {{lp}}
+    </li>
+</ul>
+<hr>
+<h1 appHighlight>Raclette</h1>
